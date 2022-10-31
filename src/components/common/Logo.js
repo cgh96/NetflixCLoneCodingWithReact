@@ -8,11 +8,7 @@ const MainLogoImg = styled.img`
 
 const LandingLogoImg = styled.img`
     margin: -36px 9rem 0 0;
-    max-width: 13em;
-
-    @media (max-width: 940px) {
-        margin: -26px 9rem 0 0;
-    }
+    width: 13rem;
 `;
 
 

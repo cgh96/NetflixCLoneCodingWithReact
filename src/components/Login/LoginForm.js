@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import InputWithLabel from './InputWithLabel';
 import { StyledLink } from '../common/StyledLink';
+import { useState, useCallback } from 'react';
 
 const LoginInputDiv = styled.div`
     padding-bottom: 16px;
@@ -28,7 +29,7 @@ const PasswordToggleBtn = styled.div`
     height: 58px;
     padding: 0 28px 0 0;
     appearance: none;
-    visibility: hidden;
+    visibility: ${props => props.visible };
     -webkit-appearance: none;
     -moz-appearance: none;
     background: transparent;
@@ -100,19 +101,54 @@ const LoginHelpLink = styled(StyledLink)`
     }
 `;
 
-const LoginForm = ({ toggle }) => {
+const LoginForm = (
+{ 
+    handleSubmit,
+    textFocus, 
+    pwFocus, 
+    visible, 
+    handleFocus, 
+    handleBlur, 
+    pwCtrl, 
+    pwType,
+    pwRef
+}) => {
+    const [pw, setPw] = useState("");
+
+    const pwValue = useCallback( (e) => {
+        setPw(e.target.value);
+        e.target.value = pw;
+    }, [pw]);
+
     return (
-        <form>
+        <form onSubmit={(e) => handleSubmit(e)}>
             <LoginInputDiv>
                 <NfInputPlacementDiv>
-                    <InputWithLabel type="text" autocomplete="off" label="이메일 주소 또는 전화번호"/>
+                    <InputWithLabel 
+                        type="text" 
+                        autocomplete="off" 
+                        label="이메일 주소 또는 전화번호"
+                        handleFocus={handleFocus}
+                        handleBlur={handleBlur}
+                        focus={textFocus}
+                    />
                 </NfInputPlacementDiv>
             </LoginInputDiv>
             <LoginInputDiv>
                 <PasswordControlsDiv>
-                    <InputWithLabel type="password" autocomplete="off" label="비밀번호"/>
+                    <InputWithLabel 
+                        type={pwType}
+                        autocomplete="off" 
+                        label="비밀번호"
+                        handleFocus={handleFocus}
+                        handleBlur={handleBlur}
+                        focus={pwFocus}
+                        pwRef={pwRef}
+                        onChange={pwValue}
+                        value={pw}
+                    />
                 </PasswordControlsDiv>
-                <PasswordToggleBtn title="비밀번호표시" >표시</PasswordToggleBtn>
+                <PasswordToggleBtn title="비밀번호표시" visible={visible} onClick={pwCtrl} > { pwType === "password" ? "표시" : "숨기기" }</PasswordToggleBtn>
             </LoginInputDiv>
             <LoginButton type="submit" autocomplete="off">로그인</LoginButton>
             <LoginFormHelpDiv>

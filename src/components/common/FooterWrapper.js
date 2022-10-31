@@ -55,8 +55,10 @@ const SiteFooter = styled.div`
     }
 
     @media screen and (min-width: 740px) {
-        margin: 0 auto;
-        max-width: 1000px;
+       & { 
+            margin: 0 auto;
+            max-width: 1000px;
+       }
     }
 `;
 

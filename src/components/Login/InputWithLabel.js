@@ -1,12 +1,12 @@
 import styled from 'styled-components';
+import { useState, } from 'react';
 
 const Label = styled.label`
     left: 20px;
     color: #8c8c8c;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    transition: font .1s;
+    top: ${ props => props.focus ? "10%" : "35%" };
+    transition: .1s;
 
     @media screen and (min-width: 740px) {
         font-size: 16px;
@@ -56,6 +56,7 @@ const CheckLabel = styled.label`
 
     &::after {
         position: relative;
+        visibility: ${ props => props.toggle ? "visible" : "hidden" };
         z-index: 5;
         color: #000;
         font-size: 18px;
@@ -81,22 +82,48 @@ const CheckBox = styled.input`
     padding: 0;
 `;
 
-const InputWithLabel = ({ label, type, ...rest}) => (
+const InputWithLabel = ({ 
+    label, 
+    type,
+    focus,
+    handleFocus,
+    handleBlur,
+    pwRef,
+    ...rest
+}) => {
+    const [toggle, setToggle] = useState(true);
+
+    const toggleClick = () => {
+        if(toggle) {
+            setToggle(false);
+        } else {
+            setToggle(true);
+        }
+    }
+    
+    return(  
         <>
-            { (type === "text" || type === "password") &&
+            { type === "text"  &&
                 <label>
-                    <Input type={type} {...rest}/>
-                    <Label>{label}</Label>
+                    <Input type={type} {...rest} onFocus={() => handleFocus(type)} onBlur={() => handleBlur(type)} focus={focus} />
+                    <Label focus={focus} >{label}</Label>
                 </label>
+            }
+            {   type === "password" &&
+                    <label>
+                        <Input type={type} {...rest} onFocus={() => handleFocus(type)} onBlur={() => handleBlur(type)} focus={focus} ref={pwRef}/>
+                        <Label focus={focus} >{label}</Label>
+                    </label>
             }
 
             { type === "checkbox" &&
                 <>
-                    <CheckBox type={type} value="true" checked />
-                    <CheckLabel><span>{label}</span></CheckLabel>
+                    <CheckBox type={type} value={toggle} defaultChecked />
+                    <CheckLabel toggle={toggle} onClick={toggleClick}><span>{label}</span></CheckLabel>
                 </>
             }
         </>
-);
+    );
+};
 
 export default InputWithLabel;
