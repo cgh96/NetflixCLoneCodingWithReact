@@ -9,10 +9,6 @@ const StyledLandingHeader = styled(HeaderWrapper)`
     margin: 0 4%;
     padding: 25px 0 0;
     width: 95%;
-
-    @media (max-width: 940px) {
-        
-    }
 `;
 
 const OptionWrapperDiv = styled.div`

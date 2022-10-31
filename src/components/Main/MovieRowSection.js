@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import CarouselWrapper from './Carousel';
 import SlideButtonWrapper from './SlideButtonWrapper';
 
 const MovieRowSectionDiv = styled.div`

@@ -1,12 +1,4 @@
 import styled from 'styled-components';
-import { 
-    CardSectionDiv,
-    SecondCardSectionDiv, 
-    SectionTitleDiv, 
-    ImgVideoWrapper, 
-    ImgContainer, 
-    VideoContainer 
-} from './CardSectionStyle';
 
 const DeviceImgContainer = styled.div`
     display: flex;
@@ -15,24 +7,23 @@ const DeviceImgContainer = styled.div`
     position: relative;
     z-index: 50;
     width: 60%;
-    height: 17%;
+    height: 15%;
     background-color: black;
     border: 2px solid #222;
     border-radius: 15px;
     padding: 1%;
     margin: -8.9em auto 0;
 
-    img {
-        width: 21%;
-        margin: 0;
+    & img:nth-child(1) {
+        width: 22%;
     }
 
-    @media only screen and (max-width: 950px) { 
-        margin: -9em auto 0;
+    @media (max-width: 940px) { 
+        margin: -10em auto 0;
         height: 70px;
         width: 55%;
 
-        img {
+        & img:nth-child(1) {
             width: 16%;
         }
     }
@@ -53,7 +44,7 @@ const TextInDevice = styled.div`
         color: #0071EB;
     }
 
-    @media only screen and (max-width: 950px) {
+    @media (max-width: 940px) {
         width: 23em;
     }
 `;
@@ -65,6 +56,137 @@ const LoadingImg = styled.div`
     z-index: 51;
     width: 50px;
 `;
+
+const CardSectionDiv = styled.div`
+    text-align: center;
+    height: 100%;
+    padding: 70px 30px;
+    background-color: black;
+    color: white;
+    border-bottom: 8px solid #222;
+
+    &>div {
+        display: flex;
+        flex-basis: 50%;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 0 auto;
+        max-width: 1100px;
+    }
+
+    @media only screen and (max-width: 940px) {
+        &>div {
+            display: block;
+        }
+    }
+`;
+
+const SectionTitleDiv = styled.div`
+    max-width: 540px;
+    min-width: 400px;
+    width: 40%;
+    color: white;
+
+    & h1 {
+        width: 100%;
+        font-size: 3rem;
+        margin: 0 0 8px 0;
+        text-align: left;
+        font-weight: 500;
+    }
+
+    & h2 {
+        font-size: 1.5rem;
+        font-weight: 500;
+        text-align: left;
+        width: 100%;
+        margin: 0.75rem 0 0.25rem 0;
+    }
+
+    @media only screen and (max-width: 940px) {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 0;
+
+        & h1 {
+            margin: 0 auto;
+            text-align: center;
+            font-size: 2.8rem;
+        }
+
+        & h2 {
+            margin: 0 auto;
+            text-align: center;
+            font-size: 1.3rem;
+        }
+    }
+
+`;
+
+
+const ImgVideoWrapper = styled.div`
+    height: 70%;
+    max-width: 550px;
+
+    @media only screen and (max-width: 940px) {
+        width: 100%;
+        max-width: 750px;
+    }
+`;
+
+const ImgContainer = styled.div`
+
+    margin: 0 0 -30%;
+    height: 100%;
+    position: relative;
+    z-index: 3;
+
+    &>img {
+        border: 0;
+        width: 96%;
+    }
+
+
+    @media (max-width: 940px) {
+        margin: 0 0 -30%;
+
+        &>img {
+            width: 80%;
+        }
+    }
+`;
+
+const VideoContainer = styled.div`
+    height: 100%;
+    left: -3px;
+    transform: translate(0%, -70%);
+    position: relative;
+
+    video {
+        height: 85%;
+        width: 70%;
+        position: relative;
+        margin: 0
+    }
+
+    @media (max-width: 940px) {
+        video {
+            width: 59%;
+            height: 83%;
+            transform: translate(0%, 17%);
+        }
+    }
+`;
+
+const SecondCardSectionDiv = styled(CardSectionDiv)`
+    @media (max-width: 940px) {
+        &>div {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    }
+`
 
 const CardSection = () => {
     return(
@@ -92,6 +214,7 @@ const CardSection = () => {
                     <ImgVideoWrapper>
                         <ImgContainer style={{ margin: "0" }}>
                             <img alt="stranger-things-woman" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg" />
+                        </ImgContainer>    
                             <DeviceImgContainer>
                                 <img alt="black-box" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/boxshot.png" />
                                 <TextInDevice>
@@ -100,7 +223,6 @@ const CardSection = () => {
                                 </TextInDevice>
                                 <LoadingImg></LoadingImg>
                             </DeviceImgContainer>
-                        </ImgContainer>
                     </ImgVideoWrapper>
                     <SectionTitleDiv>
                         <h1>즐겨 보는 콘텐츠를 저장해 오프라인으로 시청하세요.</h1>

@@ -3,19 +3,10 @@ import styled from 'styled-components';
 const FooterContainer = styled.footer`
     background-color: rgba(0, 0, 0,.75);
     margin-top: 0;
-    color: #757575;
-    font-size: 1em;
     min-width: 190px;
     padding-bottom: 20px;
     position: relative;
     width: 100%;
-`;
-
-export const TextBlock = styled.div`
-    color: grey;
-    font-size: .75em;
-    line-height: 1em;
-    margin: 3px 0;
 `;
 
 
@@ -24,6 +15,7 @@ const SiteFooter = styled.div`
     padding: 30px;
     margin: 0 auto;
     text-align: left;
+    
 
     & p:nth-child(1) {
         color: #737373;
@@ -35,7 +27,7 @@ const SiteFooter = styled.div`
     & p:nth-child(2) {
         
         font-size: 11px;
-        margin: 0 0 13px 0;
+        margin: 10px 0 13px 0;
     }
 
     & p a {

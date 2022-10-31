@@ -6,6 +6,7 @@ const LandHeaderDiv = styled.div`
     position: relative;
     display: flex;
     width: 150px;
+    margin-bottom: 25px;
 
     &::before {
         content: '';

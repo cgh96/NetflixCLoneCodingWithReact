@@ -74,7 +74,7 @@ export const ImgVideoWrapper = styled.div`
 
     @media only screen and (max-width: 950px) {
         width: 100%;
-        max-width: 750px;
+        //max-width: 750px;
     }
 `;
 
@@ -84,14 +84,15 @@ export const ImgContainer = styled.div`
     position: relative;
     z-index: 3;
 
-    img {
+    &>img {
         border: 0;
-        margin: 0 auto;
         width: 96%;
     }
 
-    @media only screen and (max-width: 950px) {
-        img {
+    @media (max-width: 950px) {
+        margin: 0 0 -30%;
+
+        &>img {
             width: 80%;
         }
     }
@@ -110,7 +111,7 @@ export const VideoContainer = styled.div`
         margin: 0
     }
 
-    @media only screen and (max-width: 950px) {
+    @media (max-width: 950px) {
         video {
             width: 59%;
             height: 83%;
@@ -120,7 +121,7 @@ export const VideoContainer = styled.div`
 `;
 
 export const SecondCardSectionDiv = styled(CardSectionDiv)`
-    @media only screen and (max-width: 950px) {
+    @media (max-width: 950px) {
         &>div {
             display: flex;
             flex-direction: column-reverse;

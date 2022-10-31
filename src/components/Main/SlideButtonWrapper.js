@@ -40,9 +40,6 @@ const CarouselWrapperDiv = styled.div`
     display: flex;
     position: relative;
     margin: 0 0 0 -111vw;
-
-    //transform: translate(${ props => props.direction * (100 / 20 * 6)}%);
-    //transition-duration: ${ props => !props.direction ? "none" : ".8s" };
 `;
 
 
