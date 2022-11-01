@@ -1,7 +1,7 @@
-# js로 작성한 Netflix clone coding 리액트로 이식하기.
+# js로 작성한 Netflix clone coding 리액트로 변환.
 
 ## 사용 패키지
-- react-router-dom, axios, styled-components
+- react-router-dom, axios, styled-components, react-helmet-async
 
 ## 새로 알게된 것
 - useEffect return

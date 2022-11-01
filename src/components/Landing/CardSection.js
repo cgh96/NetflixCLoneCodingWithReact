@@ -12,7 +12,7 @@ const DeviceImgContainer = styled.div`
     border: 2px solid #222;
     border-radius: 15px;
     padding: 1%;
-    margin: -8.9em auto 0;
+    margin: -8.8em auto 0;
 
     & img:nth-child(1) {
         width: 22%;
@@ -45,7 +45,7 @@ const TextInDevice = styled.div`
     }
 
     @media (max-width: 940px) {
-        width: 23em;
+        width: 23.1em;
     }
 `;
 
@@ -157,6 +157,10 @@ const ImgContainer = styled.div`
     }
 `;
 
+const SecondImgContainer = styled(ImgContainer)`
+    margin: 0;
+`;
+
 const VideoContainer = styled.div`
     height: 100%;
     left: -3px;
@@ -212,9 +216,9 @@ const CardSection = () => {
             <SecondCardSectionDiv>
                 <div>
                     <ImgVideoWrapper>
-                        <ImgContainer style={{ margin: "0" }}>
+                        <SecondImgContainer>
                             <img alt="stranger-things-woman" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg" />
-                        </ImgContainer>    
+                        </SecondImgContainer>    
                             <DeviceImgContainer>
                                 <img alt="black-box" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/boxshot.png" />
                                 <TextInDevice>

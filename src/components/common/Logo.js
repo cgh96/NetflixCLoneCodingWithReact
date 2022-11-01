@@ -12,11 +12,11 @@ const LandingLogoImg = styled.img`
 `;
 
 
-const Logo = ({width, type}) => {
+const Logo = ({ type }) => {
     return (
         <>
-            { type === "main" &&  <MainLogoImg width={width} src={logo} alt="netflix logo" /> }
-            { type === "landing" && <LandingLogoImg width={width} src={logo} alt="netflix logo" /> }   
+            { type === "main" &&  <MainLogoImg src={logo} alt="netflix logo" /> }
+            { type === "landing" && <LandingLogoImg  src={logo} alt="netflix logo" /> }   
         </>
     )
 };
