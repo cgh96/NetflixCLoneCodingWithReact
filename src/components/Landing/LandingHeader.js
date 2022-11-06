@@ -22,15 +22,10 @@ const OptionWrapperDiv = styled.div`
         color: white;
         width: 100px;
         height: 38px;
-        margin: 2px 0 0;
+        margin: 2px 10px 0 -20px;
     }
 
-    @media screen and (max-width: 940px) {
-        & button {
-            width: 85px;
-            height: 32px;
-        }
-    }
+  
 `;
 
 const LandingHeader = () => {

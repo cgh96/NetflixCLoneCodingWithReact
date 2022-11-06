@@ -6,8 +6,9 @@ const LoginFormContainer = () => {
     const [pwFocus, setPwFocus] = useState(false);
     const [pwType, setPwType] = useState("password");
 
-    const pwRef = useRef();
-   
+    const emailRef = useRef();
+    const passwordRef = useRef();
+
     const pwCtrl = () => {
         pwType ==="password" ? setPwType("text") : setPwType("password");
     }
@@ -16,20 +17,24 @@ const LoginFormContainer = () => {
         e.preventDeafult();
     }
 
-    const handleFocus = (type) => {
-      if(type==="password") {
+    const handleFocus = (e) => {
+      if(e.target === passwordRef.current) {
         setPwFocus(true);
         setVisible("visible");
-      } else {
+      }
+
+      if(e.target === emailRef.current) {
         setTextFocus(true);
       }
     }
 
-    const handleBlur = (type) => {
-        if(type === "password" && pwRef.current.value.length === 0) {
-            setVisible("hidden");
+    const handleBlur = (e, type) => {
+        if(e.target === passwordRef.current && e.target.value.length === 0) {
             setPwFocus(false);
-        } else {
+            setVisible("hidden");
+        }
+
+        if(e.target === emailRef.current && e.target.value.length === 0) {
             setTextFocus(false);
         }
     }
@@ -44,7 +49,8 @@ const LoginFormContainer = () => {
             handleBlur={handleBlur} 
             pwCtrl={pwCtrl}
             pwType={pwType}
-            pwRef={pwRef}
+            emailRef={emailRef}
+            passwordRef={passwordRef}
         />
     )
 };

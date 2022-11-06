@@ -10,14 +10,14 @@ const CardTextDiv = styled.div`
 
     & h1 {
         text-align: center;
-        font-weight: 100;
-        font-size: 4rem;
-        margin: 0 13rem;
+        font-weight: 200;
+        font-size: 4.2rem;
+        margin: 0;
     }
 
     & h2 {
         font-weight: 300;
-        font-size: 1.8rem;
+        font-size: 1.4rem;
         margin: 1rem 8.5rem;
     }
 
@@ -29,29 +29,32 @@ const CardTextDiv = styled.div`
     @media (min-width: 1450px) {
         & h1 {
             margin: 0 auto;
-            font-size: 3.8rem;
+            font-size: 4rem;
             max-width: 540px;
             font-weight: lighter;
         }
     }
 
     @media (max-width: 940px) {
-        margin: 6rem 12%;
+        margin: 3rem 12%;
 
         & h1 {
-            font-size: 2.8rem;
-            margin: 0;
+            text-align: center;
+            font-size: 48px;
+            margin: 0 20px;
+            padding: 0 30px;
             font-weight: 500;
         }
 
         & h2 {
             font-size: 1.6rem;
-            margin: 5px 30px;
+            margin: 5px 20px;
             font-weight: 400;
         }
 
         & h3 {
-            font-weight: 600;
+            font-weight: 300;
+            margin: 10px 5px;
         }
     }
 `;
@@ -111,7 +114,6 @@ const FormOutlineDiv = styled.div`
         position: relative;
         top: ${ props => props.visible ? "-22px" : "-5px" };
         left: 95px;
-        //width: 30px;
         height: 9px;
         color: #808080b0;
         font-size: ${ props => props.visible ? "12px" : "16px" };

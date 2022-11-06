@@ -1,0 +1,146 @@
+[
+    {
+        "id": "new-content-01",
+        "title": "너에게 닿기를",
+        "src": "https://occ-0-3996-993.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABZtLJkddmZEYaPiys9Pke87Ko43gyWBg_4bE2PPNLTdcwHsarnGvBKNxJ9tbWTRlotFM4QOKpAIvrt14h71CvN_8S48JyAgEFAc.webp?r=ed4",
+        "feature": [ "설렘주의", "감상적", "진심 어린" ]
+    },
+    {
+        "id": "new-content-02",
+        "title": "무엇이든 물어보살",
+        "src": "https://occ-0-3996-993.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABeY7g6PSf9_sKDmsdzv6bZFg_GLss_tvaZvvBp245S805fPhMTrnksAUbXjotQO33Rk6wn2nSmm9c36WJ5zBG8jM0ZifT54XyydJnNhuoo0lH_dnABjeKigvjO6EFstvmXIlcU-WDGjhkDiZABkon_mT7HrishzcV1GlBxLQuTZCDvDZiQ0k0fbA2y19dB_k22d1xiZTqLr0fSkhw-jX0GLfWkhN1tbuQvIjuQJFqByXwi0GpQn7O7gw1NMLImdMmyuPsKwiSFcrszoc_1qJikwx3MLeHHoMAL2-zqAkxF3mkx6Wpw_OaNHi3NM0EHaUrNJ9B8C4ijqG8q7VmH4PAget7-UK8PdgcvdIcD4odfW0eopd1W8s4ghAsUX_oWgKAjh2wvOmichvsrQrmnIpsVHCZJs7bpkJ0r085gFybRqDGv5-Ul59F1iDf7a9ocKFSVWI4xSM.webp?r=120",
+        "feature": [ "토크쇼", "코미디 듀오", "한국 작품"]
+    },
+    {
+        "id": "new-content-03",
+        "title": "서부 전선 이상 없다",
+        "src": "https://occ-0-3996-993.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABfYA5hDuYp6Zl-vseA2MO4Erz6orpbTVaz116YBLokZsYHyJ_uBUaMvM-F3F2N_799SB87EDJxyZjKkYiErB_rXUN4FUlf95oxwYf6yYbGsoI6WGmXtONzBy7i2ZV797pySMEwx_rSFzXNAacdCUMwC63mC_JlGcapQDOZmeoPbfbyb4in1wMv5Fu-H6fBM.jpg?r=552",
+        "feature": [ "폭력전인", "어두운", "시대물" ]
+    },
+    {
+        "id": "new-content-04",
+        "title": "인사이드 맨",
+        "src": "https://occ-0-3996-993.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYiIJm20a2ttSNSYLuZhP9HPLtBavUrKLbqQ4ikjCMXg9QqRfRjCeK_wSKDqXo1SgTwu2g5F2wvCmgpB6atRVz2I8lPdqGLhx11GD2540pKA2ZMtQDpWrge-TOFCXt8SHK07.jpg?r=197",
+        "feature": [ "능수능란한", "긴장감 넘치는", "필름 누아르" ]
+    },
+    {
+        "id": "new-content-05",
+        "title": "로맨틱 킬러",
+        "src": "https://occ-0-3996-993.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABVQb9dqF-o_SwKZyUyqRo53rnieLcvkz2jnr-IrQtDiDhr_OZ7CBXLYsD60JMbjSu_88_DNCyX8hYut00BtUUHW8-8VTSxnJaYBMLnpY2KM15IH3eTVs96aseeo1dPcialav.jpg?r=3e6",
+        "feature": [ "허당 매력", "로맨틱", "로맨스 애니메이션" ] 
+    },
+    {
+        "id": "new-content-06",
+        "title": "안녕하세요",
+        "src": "https://occ-0-3996-993.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABUc3juDmVe5KBnxtOsBuIEnDvl8kbgyMfmK6eJz68nVVLrLqsp0YbTIZkBRWHwu9t1jGtCXRWDuYcWwK3cOgvHtjTOEBbUIJghw.webp?r=8cc",
+        "feature": [ "감상적", "감정을 파고드는", " 눈물샘 자극" ]
+    },
+    {
+        "id": "new-content-07",
+        "title": "호기심의 방",
+        "src": "https://occ-0-3996-993.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQxTtcN_hYLI20-OoYKuEjabfvF8mGe_ZEAzDBtDPy8HojIjX5P3B8z2lUNibuiZC11KbgmYjx_HtkPXOcBXYpIgoT1-COJo6H4NXfn9wpp7OEml_DiQkN_-TtdVHZ2gDBgsl6sv1mz3q3EhTyXWTLhqpW8rauRkzUT8VwWTFR7mIjTma5bgii8vKuB_b1H72-1BZMePvLwsDlXz6kAqPvBtcpwj6u0eczUDmZTs96DZTpqmgjBbwqygHXiABxBip1HjrpsJiNQT1sBLfdyxdhg2oeHY4II2rPPGNWZ7sJ1FRa6AXqSqmhB4cxn2PBDtpuasiLMQrxtCChr4iFCMCKJGJDNw3TZkg6kwn8noqWCOCVN2v6ph6XAzW-jGRLO7Yia_A0EU_WJP8xqWYSdc4Axr7anh0ANrwkq0fiLPund2rqL0BFr8Jb5ayM-R7ESZPRfuwZb19c9fck8OBTxlgh9hxIZWCqNDs0gOyiIWcU3YbWd2WjXUqS4e5R0sTsatfUJueWdBdv846qEswtY3mXfLjUxJKBY.jpg?r=18d",
+        "feature": [ "섬뜩한", "피로 물든", "공포" ]
+    },
+    {
+        "id": "new-content-08",
+        "title": "창란결",
+        "src": "https://occ-0-3996-993.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABULUnx7h0XvGlAd32XTEIJDVXx89ZEYhlQp0AdmpSz3fBMNXepYO4GXoDkddQXvmhcw-JEhBnEDhVPc_BD_7sIP-SmJP8pIRZmkvLv2fSp76wrTovm_qBL8B4q1ANlMT-wkwvgdINDW4AfROe9yDiTFCiHrsaiQTcUp4qaafguLfkBTNOS6mbn5vWEDUCLDL2oHTRZN4DWnixoxvO0pqLi0OZd4wyX3-jd7kcJal0MRApmyOXouytxYySEQgFAbyw_NNyLZTwynqr4MJdAjFpQYyurVT0m7n_QKCc1VRUyFs224hXsYIJWGzgnyKS51XFw1Iskd318PONjB97LdrLmMBVu4YMdRin0rxsqC67BaDba21RtTw4BWGwg6roltnCAhYeHXJAnE7eqEKBSI7czfO7BcKmMme_28fFAWpi8S9RhtaY-UUI9gczxcL5HSRaXY7LeuH.webp?r=97e",
+        "feature": [ "유쾌 발랄", "로맨틱", "판타지 시리즈" ]
+    },
+    {
+        "id": "new-content-09",
+        "title": "배드 가이즈",
+        "src": "https://occ-0-3996-993.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABSuGUr2_lyvhcmTx5k-YIR7Hihos9SoKG8wSDyFj3XjVNkebtEpFGRNDMxLWZJpdAn0Xk2Gt-JnJOKYs7yPqzBamY_6VZzR4-uk.webp?r=ef8",
+        "feature": [ "능수능란한", "키즈 콘텐츠", "강도" ]
+    },
+    {
+        "id": "new-content-10",
+        "title": "캡틴스",
+        "src": "https://occ-0-3996-993.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABbKWO8zG_-kS6M5TEfMqP07N54CYjqrzKMAKi83C3eeqgyoOx6teKF6geXjjFR1gSXEX9DSiXKXlXXhnC2rhwqQMAxxnFw7VyUA.webp?r=8b9",
+        "feature": [ "눈을 뗄 수 없는", "감명을 주는", "다큐시리즈"]
+    },
+    {
+        "id": "new-content-11",
+        "title": "테이크오버",
+        "src": "https://occ-0-3996-993.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABSly_5wKUFzVXsOO5kqw7Ii_1suucBCCFutWsp3vMLyHIZuWJ16f-sqkB0SCKtTmsEcETZGbrc1YP130T5GVUt7Hu-rSa1ynpjTR6_5WhfxHAJv7otYDaet7_rz-R-Evkga0.jpg?r=9d0",
+        "feature": [ "긴장감 넘치는", "액션 스릴러", "도주" ]
+    },
+    {
+        "id": "new-content-12",
+        "title": "그 남자, 좋은 간호사",
+        "src": "https://occ-0-3996-993.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYmU68IgLYG8MV-NwYltacXdxgQ7rdLPCBzWyMG1GAjIibOzNjCQcnltXbeOpmELZ4TD5cQHkoQ_oTamwfyy63NxyYrRR4peu3d6a0WCIi6Vwtm_hg_qQ8gQN_e4uMX0Wok9D981Mp7mGUoa7GZeyALIGP0y_WqtIcRC_uuSSzfOoxmSIaC9SGfoUMXRFwg.jpg?r=122",
+        "feature": [ "음산한", "어두운", "범죄 실화" ]
+    },
+    {
+        "id": "new-content-13",
+        "title": "와일드 이즈 더 윈드",
+        "src": "https://occ-0-3996-993.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABVL4QVWchoBrNOuQj0YJxuFYc-L6BZxOABVD2sSpjo4j2buI4u1iwjeKmvP6PEM9A7WhukwYrPeMd1ctqgYeXuMmW-HMZfWz8LpJjbrr4inTsbG0a_t5vPqX_-9Zcdhn2Bi_dvJjpyehdjgElYY0216pzOcJRjYCbxydpy-Cr5drRQ_PdX3tfr-KwbCe650.jpg?r=b1c",
+        "feature": [ "긴장감 넘치는", "드라마 장르", "서서히 조여오는 긴장감" ]
+    },
+    {
+        "id": "new-content-14",
+        "title": "얼라이브",
+        "src": "https://occ-0-3996-993.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABS9L6l5VTOgNeypkXsWRf-rqb-3SD-sNmC8MtjjPaJdlEcI_55nrjjG0R_MwXbx4tLr67vGriXX6FToZJL2tI8FJ5DGPMW5VxR4.webp?r=611",
+        "feature": [ "감명을 주는", "멀티캐스팅", "야생에서 살아남기" ]
+    },
+    {
+        "id": "new-content-15",
+        "title": "선 & 데빌",
+        "src": "https://occ-0-3996-993.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWPswsIY48Y3x0hn09Ws5t_ofvnfkYDlu1GHt4KtCOXLlON5w3Ev-LMBp8Em5Og74BtwAQE2aEztwSbtEAiepflIUCl7ECsbB0Du56-UvM02vO2G4b0Kre4LK2Vh1OiRlIZc.jpg?r=06c",
+        "feature": [ "폭력적인", "흥미진진", "판타지 시리즈" ]
+    },
+    {
+        "id": "new-content-16",
+        "title": "영 로열스",
+        "src": "https://occ-0-3996-993.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYSqNdZdAgaolaHFJ9EWzILPQa5flGyUJqCfJ5z6SPoasyOSgZqoFXuS8yXKV-RYZ5APYQiXdCULeoK2_yLDa33SiRhNTwmq1fh2Z-rhJ2DQbYV1GgVCbqcnhira_-WCz1x6oUuiBE5O0WG65C4RoteK04T6uEotFO8dvsyiYZxmzHjD6qZC2PewhxxGgfRDcZn_htmYMX6ayKa_GngTzh78LTjN7CMeWdwqRO0z1iUPgSxrkhJE4Ram7LGQ0GOH_ITpXFGm9QsMUU0y3n3nYDAGHFFYDerZwyepfLYLV_JQlYzfQif4VPsQFaQ.jpg?r=1f3",
+        "feature": [ "감정을 파고드는", "로맨틱", "청춘극" ]
+    },
+    {
+        "id": "new-content-17",
+        "title": "유리미인살",
+        "src": "https://occ-0-3996-993.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABaKcCJmqu1xEF46xTaH69Y96l78e5-VAW_zan8K5UQ_bWhNOqXfuvOFpoRsUtow-6fdBdkXSme10xTTsyTbZ6YAyvcoWAJo1VbM.webp?r=e1e",
+        "feature": [ "설렘주의", "감상적", "판타지 시리즈" ]
+    },
+    {
+        "id": "new-content-18",
+        "title": "헬홀",
+        "src": "https://occ-0-3996-993.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABULARqP6pX2vWfZKKvwV0KrzSCnZMx6ieEk7ngHVe3DEFziQS3S8GO7WIpROFaeXhUTZJzoTU78Yge-FjgYnF7grI2k-mzp5EX8OcfVLp7N7YF1DzxsgM-_7KXtAPugj_eHK.jpg?r=659",
+        "feature": [ "섬뜩한", "불길한", "사탄" ]
+    },
+    {
+        "id": "new-content-19",
+        "title": "그녀와 그녀의 그녀",
+        "src": "https://occ-0-3996-993.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABSUhEELMJoEcEZNuaDO1sE17-lY2ER4_hBYSYTeyPD5awDEivNJSudNOYqsG8w1lvhxgpPSjidEI8blwcRLyO0LQKRMIqtNVtwkPMm2cYJFdCR_aaxNYCK0d87slTiq-jCBX.jpg?r=8bd",
+        "feature": [ "심리", "긴장감 넘치는", "미스터리" ]
+    },
+    {
+        "id": "new-content-20",
+        "title": "빅 마우스",
+        "src": "https://occ-0-3996-993.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABdzvoLnR4DepHSZ3EMI8aHKhkCR2L34zFoygnjD-RRUyy20VREa97Y-fv4Z1y2UfxiTr5dCJ10j0rtfSsO1CDjcfAmrPBRsAkp9xZ1HJDQY5KTCSM1PoUN1r4nrrS5zEo3JIosee_pTZUPRE_tjrMysRF1nxpESl8Vr6PrAHPO9OH0m4Z1SpukKQVf0Dc2RyY2Uhd6HCxRcqeNVVDIROX146AKjM9gfm3N7mr352ZUubkiMN13ye6p3XrGe080kwxqkZEER6OpLqbTYPsrJMFIV9JAfD8PbwhCCi0Vj8zRekdC3scf7T6kGMz_o.jpg?r=bfb",
+        "feature": [ "아찔하고 발칙하게", "위트 있는", "성인 애니메이션" ]
+    },
+    {
+        "id": "new-content-21",
+        "title": "아주 달콤한 작전",
+        "src": "https://occ-0-3996-993.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABe_4xyiqvHWtxq4-s6s0wlRbg7Cl-BXA3zU54kY5FJ_A3ZTQelYjSD2PMjZEvVELXzqhQnz3NiG0zEZa3YbJM38t9KjllUSpPik.webp?r=a4f",
+        "feature": [ "잔잔한", "감정을 파고드는", "코미디" ]
+    },
+    {
+        "id": "new-content-22",
+        "title": "두바이 블링",
+        "src": "https://occ-0-3996-993.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABU0bSHZs1b5z4qWcPaHJwlYzzeoqHumyC5JatqhWJUGNYWqZVCUaWV_Hr4wYyck31LkMt979V7tgNybZvR8dpcXOKHnLx-DCgXEeXnJdcb3VNzcdZgXhsp_ieHWQ5cVP9J0-.jpg?r=de5",
+        "feature": [ "리얼 인생극장", "패션", "아랍에미리트 작품" ]
+    },
+    {
+        "id": "new-content-23",
+        "title": "성난 지구",
+        "src": "https://occ-0-3996-993.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABRNzkihtQ7IvGXt_ODBKS5ufEDTZ2H7KSkFXtPGKRgb9uISKglS2ST8Uko-X7S9zZ5ONB8c3WRSKn0XS2gYBiV_0HlkDa-KPSF5_o9KBHw-BcmdtklKW3zbgwsq_ZKYEhSqN.jpg?r=3fc",
+        "feature": [ "시선 집중", "다큐시리즈", "Natural Disaster" ]
+    },
+    {
+        "id": "new-content-24",
+        "title": "칵테일 마스터",
+        "src": "https://occ-0-3996-993.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABSTmYDKXIxHl189JftELxK11CY3LDXLtt8VFb8sb4JofSzV97bYh3zZFy1qXI3X6ttFydb-ymj5LXQRkG5QjDMzZHO0IG6T93MA2ColMungCPRaXvjxD6q4nuHOYxReECPAC.jpg?r=589",
+        "feature": [ "눈을 뗄 수 없는", "흥미진진", "리얼리티 시리즈" ]
+    }
+]

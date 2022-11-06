@@ -3,6 +3,10 @@ import SocialLinksBox from './SocialLinksWrapper';
 import { StyledLink } from '../common/StyledLink';
 import styled from 'styled-components';
 
+const MainFooterDiv = styled(FooterWrapper)`
+    position: relative;
+`;
+
 const ServiceCodeBtn = styled.button`
     font-size: 13px;
     margin-bottom: 20px;
@@ -16,13 +20,13 @@ const ServiceCodeBtn = styled.button`
 `;
 
 const MemberFooterCopyright = styled.div`
-    font-size: 11px;
+    font-size: 13px;
     margin-bottom: 15px;
 `;
 
 const MainFooter = () => {
     return(
-        <FooterWrapper>
+        <MainFooterDiv>
             <SocialLinksBox />
             <ul>
                 <li>화면 해설</li>
@@ -50,7 +54,7 @@ const MainFooter = () => {
                 <div>클라우드 호스팅: Amazon Web Services Inc.</div>
                 <div><StyledLink to="#">공정거래위원회 웹사이트</StyledLink></div>
             </MemberFooterCopyright>
-        </FooterWrapper>
+        </MainFooterDiv>
     )
 };
 

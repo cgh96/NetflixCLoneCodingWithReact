@@ -19,7 +19,7 @@ const DeviceImgContainer = styled.div`
     }
 
     @media (max-width: 940px) { 
-        margin: -10em auto 0;
+        margin: -7em auto 0;
         height: 70px;
         width: 55%;
 
@@ -107,7 +107,7 @@ const SectionTitleDiv = styled.div`
         width: 100%;
         margin: 0 auto;
         text-align: center;
-        padding: 0;
+        padding: 0; //
 
         & h1 {
             margin: 0 auto;
@@ -194,7 +194,7 @@ const SecondCardSectionDiv = styled(CardSectionDiv)`
 
 const CardSection = () => {
     return(
-        <>
+        <div>
             <CardSectionDiv>
                 <div>
                     <SectionTitleDiv>
@@ -234,7 +234,7 @@ const CardSection = () => {
                     </SectionTitleDiv>
                 </div>
             </SecondCardSectionDiv>
-        </>
+        </div>
     );
 }
 

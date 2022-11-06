@@ -139,6 +139,7 @@ const SearchDiv = styled.div`
         border: 0; 
         padding: 0 0 0 8px;
         margin: ${ props => !props.design ? 0 : "-3px 0 0 0" };
+        transition-delay: ${ props => !props.design ? "0" : ".2s" };
     }
 
     & input:focus {
@@ -150,7 +151,7 @@ const MainHeader = ({ scrollPos, searchBox, setSearchBox, searchDiv }) => {
     
     return (
        <StyledMainHeader height={scrollPos}>
-            <StyledLink to="/main">
+            <StyledLink to="/">
                 <Logo type="main"/>
             </StyledLink>
             <FirstNavigation>

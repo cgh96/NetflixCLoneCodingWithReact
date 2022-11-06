@@ -88,7 +88,7 @@ const InputWithLabel = ({
     focus,
     handleFocus,
     handleBlur,
-    pwRef,
+    inputRef,
     ...rest
 }) => {
     const [toggle, setToggle] = useState(true);
@@ -105,13 +105,13 @@ const InputWithLabel = ({
         <>
             { type === "text"  &&
                 <label>
-                    <Input type={type} {...rest} onFocus={() => handleFocus(type)} onBlur={() => handleBlur(type)} focus={focus} />
+                    <Input type={type} {...rest} onFocus={(e) => handleFocus(e)} onBlur={(e) => handleBlur(e, type)} focus={focus} ref={inputRef}/>
                     <Label focus={focus} >{label}</Label>
                 </label>
             }
             {   type === "password" &&
                     <label>
-                        <Input type={type} {...rest} onFocus={() => handleFocus(type)} onBlur={() => handleBlur(type)} focus={focus} ref={pwRef}/>
+                        <Input type={type} {...rest} onFocus={(e) => handleFocus(e)} onBlur={(e) => handleBlur(e, type)} focus={focus} ref={inputRef} />
                         <Label focus={focus} >{label}</Label>
                     </label>
             }

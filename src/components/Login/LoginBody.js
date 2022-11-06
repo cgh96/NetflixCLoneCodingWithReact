@@ -6,16 +6,15 @@ const LoginBodyDiv = styled.div`
     color: #333;
     padding: 0 5%;
     margin: 0 auto;
+    top: 60px;
     position: relative;
-    top: 7em;
     z-index: 0;
 
     @media screen and (min-width: 740px) {
         background-color: transparent;
+        margin: 0 auto;
         max-width: 450px;
-        min-height: 100vh;
         z-index: 100;
-        top: 0;
 
         &::after {
             content: "";
@@ -39,7 +38,7 @@ const LoginFormDiv = styled.div`
     flex-direction: column;
     margin: 0;
     width: 100%;
-    height: 70vh;
+    //height: 70vh;
 
     & h1 {
         color: #fff;

@@ -1,24 +1,21 @@
 import styled from 'styled-components';
 import FillContainer from './FillContainer';
 import MovieRowSection from './MovieRowSection';
+import MovieModalContainer from '../../container/MainContainer/MovieModalContainer';
 
 const MainViewDiv = styled.div`
     background: linear-gradient(77deg, rgba(0,0,0,.6), transparent 85%);
     position: relative;
+    margin-bottom: -5vw;
 `;
 
 const ImgWrapperDiv = styled.div`
     width: 100vw;
-    object-fit: cover;
+    object-fit: cover;  
+`;
 
-    & div {
-        margin: 1.6vw 0 0 5px;
-        color: white;
-        letter-spacing: 1px !important;
-        width: 35vw;
-        font-size: 1.2vw;
-        line-height: 1.6vw;
-    }
+const MovieRowSectionWrapper = styled.div`
+    margin: 0 3vw;
 `;
 
 const MainBody = () => {
@@ -26,12 +23,12 @@ const MainBody = () => {
     return (
         <MainViewDiv>
             <ImgWrapperDiv>
-                <img style={{ width: "100%", position: "relative", zIndex: "-1" }} src="https://occ-0-3996-993.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABdiAuZAlPBZ8oX9Iywn5B1vkmDIKSaoq8yi-OmEqm4s8L_3Lo3N4UaAceGMuk9zmmtQR19n4wqvx_bxdsWFMz_jJPWhmpu_fUr_P.webp?r=9e1" alt="main-thumbnail" />
+                <img style={{ objectFit: "cover", width: "100%", position: "relative", zIndex: "-1" }} src="https://occ-0-3996-993.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABdiAuZAlPBZ8oX9Iywn5B1vkmDIKSaoq8yi-OmEqm4s8L_3Lo3N4UaAceGMuk9zmmtQR19n4wqvx_bxdsWFMz_jJPWhmpu_fUr_P.webp?r=9e1" alt="main-thumbnail" />
             </ImgWrapperDiv>
             <FillContainer />
-            <MovieRowSection title="지금 뜨는 컨텐츠" type="popMovie" />
-            <MovieRowSection title="최신순" type="latestMovie"/>
-            <MovieRowSection title="상영 예정" type="upcomingMovie"/>
+            <MovieRowSection title="새로 올라온 컨텐츠" type="new-content" />
+            <MovieRowSection title="지금 뜨는 컨텐츠" type="hot-content"/>
+            <MovieRowSection title="한국 드라마" type="korea-drama"/>
         </MainViewDiv>
     );
 }

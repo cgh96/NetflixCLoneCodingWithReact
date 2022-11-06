@@ -1,24 +1,6 @@
 import styled from 'styled-components';
 
-export const IndexPointDiv = styled.div`
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    background-color: rgba(0,0,0,.192);
-
-    * {
-        font-size: 16px;
-    }
-
-    @media screen and (max-width: 940px){        
-        * {
-            margin: 0;
-            font-size: 12px;
-        }
-    }
-`;
-
-export const FirstBackground = styled.div`
+const FirstBackgroundDiv = styled.div`
     overflow: hidden;
     text-align: center;
     border-bottom: 8px solid #222;
@@ -28,3 +10,13 @@ export const FirstBackground = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
 `;
+
+const FirstBackground = ({children}) => {
+    return (
+        <FirstBackgroundDiv>
+            {children}
+        </FirstBackgroundDiv>
+    )
+}
+
+export default FirstBackground;

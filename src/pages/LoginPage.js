@@ -11,11 +11,11 @@ const LoginPage = () => {
         <>  
             <Helmet><title>Netflix</title></Helmet>
             <LoginMainPage>
-            <LoginBackgroundWrapper />
-            <LoginHeader />
-            <LoginBody />
-            <LoginFooter />
-        </LoginMainPage>
+                <LoginBackgroundWrapper />
+                <LoginHeader />
+                <LoginBody />
+                <LoginFooter />
+            </LoginMainPage>
         </>
     )
 }

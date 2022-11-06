@@ -9,15 +9,16 @@ const MainLogoImg = styled.img`
 const LandingLogoImg = styled.img`
     margin: -36px 9rem 0 0;
     width: 13rem;
+
 `;
 
 
 const Logo = ({ type }) => {
     return (
-        <>
+        <div>
             { type === "main" &&  <MainLogoImg src={logo} alt="netflix logo" /> }
             { type === "landing" && <LandingLogoImg  src={logo} alt="netflix logo" /> }   
-        </>
+        </div>
     )
 };
 

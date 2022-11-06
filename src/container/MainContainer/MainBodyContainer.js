@@ -6,9 +6,9 @@ const MainBodyContainer = () => {
     useEffect( () => {
         document.body.style.overflowX = "hidden";
     },[]);
-    
+
     return (
-        <MainBody />
+        <MainBody/>
     );
 }
 

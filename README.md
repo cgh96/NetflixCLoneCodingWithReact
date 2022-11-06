@@ -3,6 +3,11 @@
 ## 사용 패키지
 - react-router-dom, axios, styled-components, react-helmet-async
 
+## 구현 기능
+1) MainPage - Carousel, search창 click 모션, Modal창,
+2) LandingPage - input창 가이드 메세지
+3) LoginPage - input창 가이드 메세지, 비밀번호 표시 토글
+
 ## 새로 알게된 것
 - useEffect return
     - useEffect는 컴포넌트가 렌더링될 때마다 `sideEffect`를 발생하게 해주는 hook이다.
@@ -61,7 +66,7 @@
     - 해결되었다.
     - 아쉬운 점
         - 컴포넌트 분리가 깔끔하지 못하다.
-        - 리액트의 특징을 살려서 구현하고 싶었는데, 그렇지 못한 것 같다.
+        - DOM을 직접적으로 조작하는 것을 지양하고 싶었지만, 그렇지 못해 아쉬웠다.
 
 
 ## 느낀 점

@@ -111,7 +111,8 @@ const LoginForm = (
     handleBlur, 
     pwCtrl, 
     pwType,
-    pwRef
+    emailRef,
+    passwordRef
 }) => {
     const [pw, setPw] = useState("");
 
@@ -131,6 +132,7 @@ const LoginForm = (
                         handleFocus={handleFocus}
                         handleBlur={handleBlur}
                         focus={textFocus}
+                        inputRef={emailRef}
                     />
                 </NfInputPlacementDiv>
             </LoginInputDiv>
@@ -143,9 +145,9 @@ const LoginForm = (
                         handleFocus={handleFocus}
                         handleBlur={handleBlur}
                         focus={pwFocus}
-                        pwRef={pwRef}
                         onChange={pwValue}
                         value={pw}
+                        inputRef={passwordRef}
                     />
                 </PasswordControlsDiv>
                 <PasswordToggleBtn title="비밀번호표시" visible={visible} onClick={pwCtrl} > { pwType === "password" ? "표시" : "숨기기" }</PasswordToggleBtn>

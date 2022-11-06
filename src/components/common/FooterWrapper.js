@@ -4,18 +4,15 @@ const FooterContainer = styled.footer`
     background-color: rgba(0, 0, 0,.75);
     margin-top: 0;
     min-width: 190px;
-    padding-bottom: 20px;
-    position: relative;
     width: 100%;
 `;
 
 
 const SiteFooter = styled.div`
     color: #737373;
-    padding: 30px;
     margin: 0 auto;
     text-align: left;
-    
+    padding: 10px 8vw 20px 30px;
 
     & p:nth-child(1) {
         color: #737373;
@@ -25,7 +22,6 @@ const SiteFooter = styled.div`
     }
 
     & p:nth-child(2) {
-        
         font-size: 11px;
         margin: 10px 0 13px 0;
     }
@@ -55,10 +51,9 @@ const SiteFooter = styled.div`
     }
 
     @media screen and (min-width: 740px) {
-       & { 
             margin: 0 auto;
+            padding-left: 20vw;
             max-width: 1000px;
-       }
     }
 `;
 

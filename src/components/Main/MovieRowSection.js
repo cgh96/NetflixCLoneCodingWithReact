@@ -11,7 +11,6 @@ const RowContainerDiv = styled.div`
     margin: 0 0 3vw 0;
 
     &>div {
-        box-sizing: border-box;
         padding: 0;
     }
 
@@ -23,7 +22,8 @@ const RowContainerDiv = styled.div`
 
 const RowHeaderTitleDiv = styled.div`
     display: table-cell;
-    font-size: 1.4vw;
+    font-size: 1.25vw;
+    font-weight: 400;
     line-height: 1.25vw;
     vertical-align: bottom;
     color: white;
