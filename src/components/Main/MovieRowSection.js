@@ -22,9 +22,9 @@ const RowContainerDiv = styled.div`
 
 const RowHeaderTitleDiv = styled.div`
     display: table-cell;
-    font-size: 1.25vw;
+    font-size: 1.6vw;
     font-weight: 400;
-    line-height: 1.25vw;
+    line-height: 1.4vw;
     vertical-align: bottom;
     color: white;
 `;

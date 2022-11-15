@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import FillContainer from './FillContainer';
 import MovieRowSection from './MovieRowSection';
-import MovieModalContainer from '../../container/MainContainer/MovieModalContainer';
 
 const MainViewDiv = styled.div`
     background: linear-gradient(77deg, rgba(0,0,0,.6), transparent 85%);
@@ -14,9 +13,6 @@ const ImgWrapperDiv = styled.div`
     object-fit: cover;  
 `;
 
-const MovieRowSectionWrapper = styled.div`
-    margin: 0 3vw;
-`;
 
 const MainBody = () => {
     

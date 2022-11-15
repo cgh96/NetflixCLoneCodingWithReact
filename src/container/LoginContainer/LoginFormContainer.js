@@ -1,20 +1,17 @@
 import LoginForm from '../../components/Login/LoginForm';
 import { useState, useRef } from 'react';
+
 const LoginFormContainer = () => {
     const [visible, setVisible] = useState("hidden");
     const [textFocus, setTextFocus] = useState(false);
     const [pwFocus, setPwFocus] = useState(false);
-    const [pwType, setPwType] = useState("password");
 
     const emailRef = useRef();
     const passwordRef = useRef();
 
-    const pwCtrl = () => {
-        pwType ==="password" ? setPwType("text") : setPwType("password");
-    }
 
     const preventSubmit = (e) => {
-        e.preventDeafult();
+        e.preventDefault();
     }
 
     const handleFocus = (e) => {
@@ -47,8 +44,6 @@ const LoginFormContainer = () => {
             pwFocus={pwFocus} 
             handleFocus={handleFocus} 
             handleBlur={handleBlur} 
-            pwCtrl={pwCtrl}
-            pwType={pwType}
             emailRef={emailRef}
             passwordRef={passwordRef}
         />

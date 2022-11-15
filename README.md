@@ -6,7 +6,8 @@
 ## 구현 기능
 1) MainPage - Carousel, search창 click 모션, Modal창,
 2) LandingPage - input창 가이드 메세지
-3) LoginPage - input창 가이드 메세지, 비밀번호 표시 토글
+3) LoginPage - input창 가이드 메세지, 비밀번호 표시 토글, 이메일 검증
+<br><br>
 
 ## 새로 알게된 것
 - useEffect return
@@ -19,6 +20,7 @@
             return //clean-up해야하는 것.
         }, []);
     ```
+<br><br>
 
 ## Trouble Shooting
 
@@ -67,7 +69,7 @@
     - 아쉬운 점
         - 컴포넌트 분리가 깔끔하지 못하다.
         - DOM을 직접적으로 조작하는 것을 지양하고 싶었지만, 그렇지 못해 아쉬웠다.
-
+<br><br>
 
 ## 느낀 점
 

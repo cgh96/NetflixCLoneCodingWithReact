@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import InputWithLabel from './InputWithLabel';
 import { StyledLink } from '../common/StyledLink';
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 
 const LoginInputDiv = styled.div`
     padding-bottom: 16px;
@@ -109,17 +109,56 @@ const LoginForm = (
     visible, 
     handleFocus, 
     handleBlur, 
-    pwCtrl, 
-    pwType,
     emailRef,
     passwordRef
 }) => {
-    const [pw, setPw] = useState("");
+    const [pw, setPw] = useState({ value: "", design: false });
+    const [email, setEmail] = useState({ value: "" , design: false });
+    const [pwType, setPwType] = useState("password");
+    let regExp = new RegExp(/[a-zA-Z0-9]+@[a-z]+\.[a-z]{2,3}/);
+
+    const pwCtrl = useCallback( () => {
+        pwType ==="password" ? setPwType("text") : setPwType("password");
+    }, [pwType]);
+
+
+    const emailValue = useCallback( (e) => {
+        if(regExp.test(e.target.value) || e.target.value.length === 0) {
+            setEmail({ value: e.target.value, design: false });
+            e.target.style.cssText=`
+                border-bottom: none; 
+            `;
+        } else {
+            setEmail({ value: e.target.value, design: true })
+            e.target.style.cssText=`
+                border-bottom: 2px solid #E87C03; 
+            `;
+        }
+    }, [regExp]);
 
     const pwValue = useCallback( (e) => {
-        setPw(e.target.value);
-        e.target.value = pw;
+        if( (e.target.value.length >= 4 && e.target.value.length <= 60) || e.target.value === "") {
+            setPw({ value: e.target.value, design: false });
+            e.target.style.cssText=`
+                border-bottom: none; 
+            `;
+        } else {
+            setPw({ value: e.target.value, design: true });
+            e.target.style.cssText=`
+                border-bottom: 2px solid #E87C03; 
+            `;
+        }
     }, [pw]);
+
+    useEffect( () => {
+        pw.design ? passwordRef.current.style.cssText=`
+            border-bottom: 2px solid #E87C03; 
+        `
+        :
+        passwordRef.current.style.cssText=`
+            border-bottom: none; 
+        `
+    }, [pwType]);
 
     return (
         <form onSubmit={(e) => handleSubmit(e)}>
@@ -133,8 +172,10 @@ const LoginForm = (
                         handleBlur={handleBlur}
                         focus={textFocus}
                         inputRef={emailRef}
+                        onChange={emailValue}
                     />
                 </NfInputPlacementDiv>
+                <div style={{ color: "#E87C03", height: "18px", fontSize: "13px" }}>{ email.design && <>정확한 이메일 주소를 입력하세요.</> }</div>
             </LoginInputDiv>
             <LoginInputDiv>
                 <PasswordControlsDiv>
@@ -146,11 +187,12 @@ const LoginForm = (
                         handleBlur={handleBlur}
                         focus={pwFocus}
                         onChange={pwValue}
-                        value={pw}
+                        value={pw.value}
                         inputRef={passwordRef}
                     />
                 </PasswordControlsDiv>
                 <PasswordToggleBtn title="비밀번호표시" visible={visible} onClick={pwCtrl} > { pwType === "password" ? "표시" : "숨기기" }</PasswordToggleBtn>
+                <div style={{ color: "#E87C03", height: "18px", margin: "-58px 0 20px", fontSize: "13px" }}>{ pw.design && <>비밀번호는 4~60자 사이여야 합니다.</> }</div>
             </LoginInputDiv>
             <LoginButton type="submit" autocomplete="off">로그인</LoginButton>
             <LoginFormHelpDiv>

@@ -6,7 +6,7 @@ const LoginBackgroundDiv = styled.div`
 
     @media screen and (min-width: 740px) {
         display: inline-block;
-        overflow:hidden;
+        overflow: hidden;
         min-height: 100vh;
         position: absolute;
         width: 100%;
@@ -18,7 +18,6 @@ const StyledImg = styled.img`
     border: 0;
 
     @media screen and (min-width: 740px) {
-
         height: 100vh;
         width: 100%;
     }

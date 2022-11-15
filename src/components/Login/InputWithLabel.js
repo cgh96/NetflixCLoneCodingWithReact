@@ -9,25 +9,30 @@ const Label = styled.label`
     transition: .1s;
 
     @media screen and (min-width: 740px) {
-        font-size: 16px;
+        font-size: 12px;
     }
 `;
 
 const Input = styled.input`
     border: 0;
+    box-sizing: border-box;
     border-radius: 4px;
     color: #fff;
-    height: 45px;
+    height: 59px;
     line-height: 45px;
     padding: 16px 13px 0 20px;
     background-color: #333;
     display: block;
     font-size: 16px;
-    width: 90%;
+    width: 95%;
 
     &:focus {
         outline: none;
         background-color: #4e4e4e;
+    }
+
+    @media only screen and (min-width: 740px) {
+        width: 100%;
     }
 `;
 
@@ -89,6 +94,7 @@ const InputWithLabel = ({
     handleFocus,
     handleBlur,
     inputRef,
+    onChange,
     ...rest
 }) => {
     const [toggle, setToggle] = useState(true);
@@ -105,13 +111,13 @@ const InputWithLabel = ({
         <>
             { type === "text"  &&
                 <label>
-                    <Input type={type} {...rest} onFocus={(e) => handleFocus(e)} onBlur={(e) => handleBlur(e, type)} focus={focus} ref={inputRef}/>
+                    <Input type={type} {...rest} onFocus={(e) => handleFocus(e)} onBlur={(e) => handleBlur(e, type)} focus={focus} ref={inputRef} onChange={onChange} />
                     <Label focus={focus} >{label}</Label>
                 </label>
             }
             {   type === "password" &&
                     <label>
-                        <Input type={type} {...rest} onFocus={(e) => handleFocus(e)} onBlur={(e) => handleBlur(e, type)} focus={focus} ref={inputRef} />
+                        <Input type={type} {...rest} onFocus={(e) => handleFocus(e)} onBlur={(e) => handleBlur(e, type)} focus={focus} ref={inputRef} onChange={onChange} />
                         <Label focus={focus} >{label}</Label>
                     </label>
             }

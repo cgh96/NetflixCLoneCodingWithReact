@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import MovieImg from './MovieImage';
+import MovieImageContainer from '../../container/MainContainer/MovieImageContainer';
 import newContent from '../../MovieData/newContents.json';
 import hotContent from '../../MovieData/hotContents.json';
 import koreaDrama from '../../MovieData/koreaDrama.json';
@@ -12,7 +12,7 @@ const SlideButtonWrapperDiv = styled.div`
 const Button = styled.b`
     display: inline-block;
     position: absolute;
-    z-index: 100;
+    z-index: 110;
     width: 1.75vw;
     height: 8.6vw;
     text-align: center;
@@ -32,11 +32,15 @@ const Button = styled.b`
 const PrevButton = styled(Button)`
     left: 0;
     padding: 0.3vw 0.7vw 0.3vw 0;
+    border-top-right-radius: 10px 7x;
+    border-bottom-right-radius: 10px 7x;
 `;
 
 const NextButton = styled(Button)`
     right: 0;
     padding: 0.3vw 0.5vw 0.3vw 0.3vw;
+    border-top-left-radius: 10px 7x;
+    border-bottom-left-radius: 10px 7x;
 `;
 
 const CarouselWrapperDiv = styled.div`
@@ -86,9 +90,9 @@ const SlideButtonWrapper = ({ type }) => {
 
     const handleTransitionEnd = useCallback( () => {
         const container = carouselRef.current;
+        container.style.removeProperty("transform", "none");
+        container.style.removeProperty("transition-duration", "none");
         for(let cnt = 0; cnt < 6; cnt++) {
-            container.style.removeProperty("transform", "none");
-            container.style.removeProperty("transition-duration", "none");
             if(moveDirection === 1) {
                 container.prepend(container.removeChild(container.childNodes[container.childNodes.length - 1]));
             } else {
@@ -106,12 +110,10 @@ const SlideButtonWrapper = ({ type }) => {
                     }
                     {  content &&  
                         content.map( (movie, index) =>  { 
-                            return <MovieImg 
-                                        key={movie.title} 
-                                        src={movie.src}
-                                        movieId={movie.id} 
+                            return <MovieImageContainer 
+                                        key={movie.title}  
                                         index={ (index + 1) % 6 === 0 ? 6 : (index + 1) % 6 } 
-                                        feature={movie.feature}
+                                        movie={movie}
                                     /> 
                         })
                     }

@@ -53,7 +53,7 @@ const LoginFormDiv = styled.div`
         margin-bottom: 90px;
         padding: 60px 68px 40px;
         background-color: rgba(0,0,0,.75);
-        border-radius: 4px;
+        border-radius: 10px;
         box-sizing: border-box;
         display: flex;
         flex-direction: column;

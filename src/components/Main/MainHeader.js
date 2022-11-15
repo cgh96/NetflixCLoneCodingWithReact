@@ -5,12 +5,14 @@ import Logo from '../common/Logo';
 
 
 const StyledMainHeader = styled(HeaderWrapper)`
-    position:fixed;
-    z-index: 100;
+    position: fixed;
+    z-index: 101;
+    min-width: 820px;
     max-height: 68px;
     align-items: center;
     background: ${props => props.height > 0 ? "black" : "linear-gradient(rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.01))" };
     transition: .4s;
+    padding: 0 2.5vw;
 `;
 
 const FirstNavigation = styled.ul`
@@ -125,29 +127,29 @@ const SearchDiv = styled.div`
     border: ${ props => !props.design ? 0 : "1px solid white" };
     transform: ${ props => !props.design ? "none" : "scaleX(1)" };
     transition: ${ props => !props.design ? "none" : ".4s" };
-    padding: 0 13px;
+    padding: 2px 3px 1px;
     right: 195px;
-    width: ${ props => !props.design ? 0 : "220px" };
-    height: 40px;
+    width: ${ props => !props.design ? 0 : "300px" };
+    height: 35px;
+`;
 
-    & input {
-        height: 35px;
-        width: ${ props => !props.design ? 0 : "130px" };
-        color: white;
-        outline: none;
-        background: transparent;
-        border: 0; 
-        padding: 0 0 0 8px;
-        margin: ${ props => !props.design ? 0 : "-3px 0 0 0" };
-        transition-delay: ${ props => !props.design ? "0" : ".2s" };
-    }
+const SearchInput=styled.input`
+    height: 35px;
+    width: ${ props => !props.design ? 0 : "280px" };
+    color: white;
+    outline: none;
+    background: transparent;
+    border: 0; 
+    padding: 0 0 0 8px;
+    margin: ${ props => !props.design ? 0 : "-3px 0 0 0" };
+    transition-delay: ${ props => !props.design ? "0" : ".2s" };
 
-    & input:focus {
+    &:focus {
         outline: none;
     }
 `;
 
-const MainHeader = ({ scrollPos, searchBox, setSearchBox, searchDiv }) => {
+const MainHeader = ({ scrollPos, searchBox, setSearchBox, searchDiv, updateSearchValue, searchVal }) => {
     
     return (
        <StyledMainHeader height={scrollPos}>
@@ -155,11 +157,15 @@ const MainHeader = ({ scrollPos, searchBox, setSearchBox, searchDiv }) => {
                 <Logo type="main"/>
             </StyledLink>
             <FirstNavigation>
-                <li>홈</li>
+                <StyledLink to="/main">
+                    <li>홈</li>
+                </StyledLink>
                 <li>시리즈</li>
                 <li>영화</li>
                 <li>NEW! 요즘 대세 콘텐츠</li>
-                <li>내가 찜한 콘텐츠</li>
+                <StyledLink to="/main/favorite">
+                    <li>내가 찜한 콘텐츠</li>
+                </StyledLink>
                 <li>언어별로 찾아보기</li>
             </FirstNavigation>
             <SecondNavigation>
@@ -177,7 +183,7 @@ const MainHeader = ({ scrollPos, searchBox, setSearchBox, searchDiv }) => {
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="search-icon"><path fillRule="evenodd" clipRule="evenodd" d="M13 11C13 13.7614 10.7614 16 8 16C5.23858 16 3 13.7614 3 11C3 8.23858 5.23858 6 8 6C10.7614 6 13 8.23858 13 11ZM14.0425 16.2431C12.5758 17.932 10.4126 19 8 19C3.58172 19 0 15.4183 0 11C0 6.58172 3.58172 3 8 3C12.4183 3 16 6.58172 16 11C16 11.9287 15.8417 12.8205 15.5507 13.6497L24.2533 18.7028L22.7468 21.2972L14.0425 16.2431Z" fill="currentColor"></path></svg>
                             </SearchTab>
                         }
-                        <input type="text" placeholder="제목, 사람, 장르" />
+                        <SearchInput design={searchBox} type="text" placeholder="제목, 사람, 장르" onChange={updateSearchValue} value={searchVal} />
                     </SearchDiv>
                     <ShowKids>
                         <StyledLink to="#">키즈</StyledLink>
