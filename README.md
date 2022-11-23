@@ -1,10 +1,10 @@
 # js로 작성한 Netflix clone coding 리액트로 변환.
 
 ## 사용 패키지
-- react-router-dom, axios, styled-components, react-helmet-async
+- react-router-dom, styled-components, react-helmet-async, redux
 
 ## 구현 기능
-1) MainPage - Carousel, search창 click 모션, Modal창,
+1) MainPage - Carousel, search창 click시 열고 닫힘, Modal창, 컨텐츠 검색, 
 2) LandingPage - input창 가이드 메세지
 3) LoginPage - input창 가이드 메세지, 비밀번호 표시 토글, 이메일 검증
 <br><br>
@@ -89,11 +89,13 @@
         5)`sideEffect`를 만들 수 있다.<br>
         6)`props`를 자유롭게 받을 수 있다.<br><br>
     - 장점 <br>
-        1)재사용성
-        2)구조에 대한 이해가 쉽다.
-        3)마크업 작업이 편하다.
+        1)재사용성<br>
+        2)구조에 대한 이해가 쉽다.<br>
+        3)마크업 작업이 편하다.<br><br>
     - 단점
-        1)파일 수가 많아진다.
+        1)파일 수가 많아진다.<br>
     - `Presentaional`과 `Container`를 나누는 기준
         Presentational은 stateless한 경향이 있고 Container는 stateful한 경향이 있으나, 절대적인 기준은 아니다.
         따라서 해당 컴포넌트가 state를 가지고 있냐 없냐의 기능적인 부분보다는 `어떤 목적을 가지고 있는지에 집중하는 것이 좋다`
+
+ 리액트 패턴에 대해 좀 더 찾아보고 공부하고나니 재사용성을 위한 컴포넌트 분리, 관심사 분리 하는 부분에서 아쉬움이 남았다.
