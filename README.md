@@ -6,6 +6,13 @@ react와 redux의 사용을 익히기 위해 이전에 js로 작성한 클론코
 ## 사용 기술 스택
 redux, react, styled-components
 
+## Getting Started
+```
+git clone https://github.com/CGH123198/NetflixCLoneCodingWithReact
+cd ./NetflixCLoneCodingWithReact
+npm start
+```
+
 ## 구현 기능
 1) MainPage - Carousel, search창 click시 열고 닫힘, Modal창, 컨텐츠 검색, 
 2) LandingPage - input창 가이드 메세지
