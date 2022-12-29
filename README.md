@@ -1,7 +1,10 @@
 # js로 작성한 Netflix clone coding 리액트로 변환.
 
-## 사용 패키지
-- react-router-dom, styled-components, react-helmet-async, redux
+## 프로젝트 간략 설명
+react와 redux의 사용을 익히기 위해 이전에 js로 작성한 클론코딩을 react로 migration한 프로젝트입니다.
+
+## 사용 기술 스택
+redux, react, styled-components
 
 ## 구현 기능
 1) MainPage - Carousel, search창 click시 열고 닫힘, Modal창, 컨텐츠 검색, 
