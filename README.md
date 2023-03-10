@@ -1,10 +1,10 @@
-# js로 작성한 Netflix clone coding 리액트로 변환.
-
 ## 프로젝트 간략 설명
 react와 redux의 사용을 익히기 위해 이전에 js로 작성한 클론코딩을 react로 migration한 프로젝트입니다.
+<br><br><br><br>
 
 ## 사용 기술 스택
 redux, react, styled-components
+<br><br><br><br>
 
 ## Getting Started
 ```
@@ -12,12 +12,13 @@ git clone https://github.com/CGH123198/NetflixCLoneCodingWithReact
 cd ./NetflixCLoneCodingWithReact
 npm start
 ```
+<br><br><br><br>
 
 ## 구현 기능
 1) MainPage - Carousel, search창 click시 열고 닫힘, Modal창, 컨텐츠 검색, 
 2) LandingPage - input창 가이드 메세지
 3) LoginPage - input창 가이드 메세지, 비밀번호 표시 토글, 이메일 검증
-<br><br>
+<br><br><br><br>
 
 ## 새로 알게된 것
 - useEffect return
@@ -30,7 +31,7 @@ npm start
             return //clean-up해야하는 것.
         }, []);
     ```
-<br><br>
+<br><br><br><br>
 
 ## Trouble Shooting
 
@@ -79,7 +80,7 @@ npm start
     - 아쉬운 점
         - 컴포넌트 분리가 깔끔하지 못하다.
         - DOM을 직접적으로 조작하는 것을 지양하고 싶었지만, 그렇지 못해 아쉬웠다.
-<br><br>
+<br><br><br><br>
 
 ## 느낀 점
 
